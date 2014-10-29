@@ -50,11 +50,16 @@ The output has the following format:
 ```
 
 #### Properties
- - Functions  
-    | Name        | Values                            |
-    | ----------- | --------------------------------- |
-    | forward     | false, true                       |
-    | type        | native, static, function, public  |
- - Macros
-   Test
- - Enums
+
+##### Functions
+ | Name        | Values                             |
+ | ----------- | ---------------------------------- |
+ | forward     | boolean                            |
+ | type        | {native, static, function, public} |
+ | tag         | {Float:, File:, ...:}              |
+ | name        | string                             |
+ | args        | object[]                           |
+ | addr        | -                                  |
+ | line        | int                                |
+##### Macros
+##### Enums
