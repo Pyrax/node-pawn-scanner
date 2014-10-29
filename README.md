@@ -53,15 +53,15 @@ The output has the following format:
 
 ##### Functions
 
- | Name        | Values                             |
- |-------------|------------------------------------|
- | forward     | boolean                            |
- | type        | {native, static, function, public} |
- | tag         | {Float:, File:, ...:}              |
- | name        | string                             |
- | args        | object[]                           |
- | addr        | TODO                               |
- | line        | int                                |
+ Name        | Values                           
+ ----------- | ----------------------------------
+ forward     | boolean                          
+ type        | \{native, static, function, public\}
+ tag         | \{Float:, File:, \.\.\.:\}            
+ name        | string                           
+ args        | object\[\]                         
+ addr        | TODO                             
+ line        | int                              
 
 ##### Macros
 
