@@ -54,7 +54,7 @@ The output has the following format:
 ##### Functions
 
  | Name        | Values                             |
- | ----------- | ---------------------------------- |
+ |-------------|------------------------------------|
  | forward     | boolean                            |
  | type        | {native, static, function, public} |
  | tag         | {Float:, File:, ...:}              |
