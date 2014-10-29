@@ -51,11 +51,10 @@ The output has the following format:
 
 #### Properties
  - Functions  
-   
+    | Name        | Values                            |
+    | ----------- | --------------------------------- |
+    | forward     | false, true                       |
+    | type        | native, static, function, public  |
  - Macros
+   Test
  - Enums
-
- | Name        | Values                            |
- | ----------- | --------------------------------- |
- | forward     | false, true                       |
- | type        | native, static, function, public  |
