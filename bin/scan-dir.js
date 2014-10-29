@@ -26,7 +26,8 @@ if (!stats.isDirectory()) {
 try {
   var output = pawnScanner.scanDir(process.argv[2]);
 
-  process.stdout.write(JSON.stringify(output));
+  //process.stdout.write(JSON.stringify(output));
+  fs.writeFileSync('output.json', JSON.stringify(output));
 } catch (e) {
   throw e;
 
