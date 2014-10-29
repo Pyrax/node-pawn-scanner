@@ -48,3 +48,36 @@ The output has the following format:
   ]
 }
 ```
+
+#### Properties
+
+##### Functions
+
+ Name        | Values                           
+ ----------- | ----------------------------------
+ forward     | boolean                          
+ type        | \{native, static, function, public\}
+ tag         | \{Float:, File:, \.\.\.:\}            
+ name        | string                           
+ args        | object\[ \]                         
+ addr        | TODO                             
+ line        | int                              
+
+##### Macros
+
+ Name         | Values
+ ------------ | -----------------------------------------
+ prefix       | string
+ pattern      | string (+ %0, %1, \.\.\., %9)
+ substitution | string (+ %0, %1, \.\.\., %9)/int/float
+ line         | int
+
+##### Enums
+
+ Name         | Values
+ ------------ | -----------------------------
+ tag          | \{Float:, File:, \.\.\.:\}
+ name         | string
+ increment    | math expression
+ variables    | object\[ \]
+ line         | int
