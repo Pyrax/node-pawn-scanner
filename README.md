@@ -67,7 +67,7 @@ The output has the following format:
 
  Name         | Values
  ------------ | -----------------------------------------
- prefix       | string (+ %0, %1, \.\.\., %9)
+ prefix       | string
  pattern      | string (+ %0, %1, \.\.\., %9)
  substitution | string (+ %0, %1, \.\.\., %9)/int/float
  line         | int
