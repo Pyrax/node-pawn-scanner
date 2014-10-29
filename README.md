@@ -59,7 +59,7 @@ The output has the following format:
  type        | \{native, static, function, public\}
  tag         | \{Float:, File:, \.\.\.:\}            
  name        | string                           
- args        | object\[\]                         
+ args        | object\[ \]                         
  addr        | TODO                             
  line        | int                              
 
@@ -73,3 +73,11 @@ The output has the following format:
  line         | int
 
 ##### Enums
+
+ Name         | Values
+ ------------ | -----------------------------
+ tag          | \{Float:, File:, \.\.\.:\}
+ name         | string
+ increment    | math expression
+ variables    | object\[ \]
+ line         | int
