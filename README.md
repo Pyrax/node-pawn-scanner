@@ -52,6 +52,7 @@ The output has the following format:
 #### Properties
 
 ##### Functions
+
  | Name        | Values                             |
  | ----------- | ---------------------------------- |
  | forward     | boolean                            |
@@ -59,7 +60,9 @@ The output has the following format:
  | tag         | {Float:, File:, ...:}              |
  | name        | string                             |
  | args        | object[]                           |
- | addr        | -                                  |
+ | addr        | TODO                               |
  | line        | int                                |
+
 ##### Macros
+
 ##### Enums
