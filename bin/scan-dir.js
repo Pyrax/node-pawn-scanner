@@ -30,9 +30,7 @@ try {
     "meta": {
       "time_created": Math.round(Date.now() / 1000)
     },
-    "code": {
-      output
-    }
+    "code": output
   };
   
   fs.writeFileSync('./web/output.json', JSON.stringify(obj));
