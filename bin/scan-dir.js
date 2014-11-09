@@ -25,9 +25,17 @@ if (!stats.isDirectory()) {
 
 try {
   var output = pawnScanner.scanDir(process.argv[2]);
-
-  //process.stdout.write(JSON.stringify(output));
-  fs.writeFileSync('./web/output.json', JSON.stringify(output));
+  
+  var obj = '{ \
+    "meta": { \
+      "time_created": ' + Math.round(Date.now() / 1000) + ' \
+    }, \
+    "code": { \
+      ' + output + ' \
+    } \
+  }';
+  
+  fs.writeFileSync('./web/output.json', JSON.stringify(obj));
 } catch (e) {
   throw e;
 
