@@ -20,7 +20,7 @@
         <div class="row">
             <h1 class="page-header">PAWN scan report</h1>
             <div ng-controller="fileController">
-                <div ng-repeat="file in scan" ng-cloak>
+                <div ng-repeat="file in scan.code" ng-cloak>
                     <h2>{{ file.filename }}</h2>
 
                     <h3>Functions</h3>
@@ -66,6 +66,12 @@
                         </tr>
                     </table>
                 </div>
+
+                <p class="text-center text-muted" ng-cloak>
+                    <small>
+                        Report created on {{ scan.meta.time_created | date:'dd. MMMM yyyy \'at\' HH:mm' }}
+                    </small>
+                </p>
             </div>
         </div>
     </div>
