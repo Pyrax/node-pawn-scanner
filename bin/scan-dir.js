@@ -28,7 +28,7 @@ try {
   
   var obj = {
     "meta": {
-      "time_created": Math.round(Date.now() / 1000)
+      "time_created": Date.now()
     },
     "code": output
   };
