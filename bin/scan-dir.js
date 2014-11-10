@@ -8,16 +8,10 @@ var pawnScanner = require('../lib/pawn-scanner');
 
 var args = process.argv;
 
-if (args.length < 3) {
+if (args.length < 3 || args.length > 4) {
   console.error('Usage: scan-dir <dirname> (<output>)');
 
   process.exit(1);
-} else if (args.length === 4) {
-  if(!fs.existsSync(path.dirname(args[3]))) {
-    console.error('Error: Invalid output dir given');
-    
-    process.exit(1);
-  }
 } else {
   console.error('Usage: scan-dir <dirname> (<output>)');
   
@@ -28,6 +22,14 @@ if (!fs.existsSync(args[2])) {
   console.error('Error: Invalid dir given');
 
   process.exit(1);
+}
+
+if (args.length === 4) {
+  if(!fs.existsSync(path.dirname(args[3]))) {
+    console.error('Error: Invalid output dir given');
+    
+    process.exit(1);
+  }
 }
 
 var stats = fs.statSync(args[2]);
