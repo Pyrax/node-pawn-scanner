@@ -39,7 +39,7 @@ if (!stats.isDirectory()) {
 }
 
 try {
-  var output = pawnScanner.scanDir(process.argv[2]);
+  var output = pawnScanner.scanDir(args[2]);
   
   var obj = {
     "meta": {
