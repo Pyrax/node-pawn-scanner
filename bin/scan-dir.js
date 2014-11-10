@@ -9,11 +9,11 @@ var pawnScanner = require('../lib/pawn-scanner');
 var args = process.argv;
 
 if (args.length < 3 || args.length > 4) {
-  console.error('Usage: scan-dir <dirname> (<output>)');
+  console.error('Usage: scan-dir <dirname> [output file]');
 
   process.exit(1);
 } else {
-  console.error('Usage: scan-dir <dirname> (<output>)');
+  console.error('Usage: scan-dir <dirname> [output file]');
   
   process.exit(1);
 }
@@ -30,6 +30,8 @@ if (args.length === 4) {
     
     process.exit(1);
   }
+} else {
+  args[3] = './web/output.json';
 }
 
 var stats = fs.statSync(args[2]);
@@ -50,7 +52,7 @@ try {
     "code": output
   };
   
-  fs.writeFileSync('./web/output.json', JSON.stringify(obj));
+  fs.writeFileSync(args[3], JSON.stringify(obj));
 } catch (e) {
   throw e;
 
