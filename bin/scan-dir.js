@@ -12,10 +12,6 @@ if (args.length < 3 || args.length > 4) {
   console.error('Usage: scan-dir <dirname> [output file]');
 
   process.exit(1);
-} else {
-  console.error('Usage: scan-dir <dirname> [output file]');
-  
-  process.exit(1);
 }
 
 if (!fs.existsSync(args[2])) {
